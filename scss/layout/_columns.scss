@@ -1,7 +1,21 @@
 .card {
   @include span-columns(12);
   @include size($height: 400px);
-  background-color: lavender;
+  background-color: $orange;
+}
+
+.card::after {
+  @include size($height: 100%);
+  content: "";
+  background: url('../img/rey.jpg');
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 img {
@@ -9,10 +23,22 @@ img {
 }
 
 .card-header {
-  font-family: $main-font;
+  @include fontface($main-font, 1.09em, 300);
   @include size($margin: 5% 5% 0 5%);
+  line-height: 4vh;
+  letter-spacing: .5px;
+
 }
 
 .card-comment {
-  @extend .card-header
+  @include fontface($main-font, .85em, 25);
+  @include size($margin: 5% 5% 0 5%);
+}
+
+button {
+  font-family: $main-font;
+  @include size(35%, auto, 5% 0 0 5%);
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: none;
 }
