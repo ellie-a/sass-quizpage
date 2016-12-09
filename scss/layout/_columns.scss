@@ -2,6 +2,13 @@
   @include span-columns(12);
   @include size($height: 435px);
   background-color: $orange;
+
+  img {
+    @include size(80%, auto, auto);
+    margin-top: 5%;
+    display: block;
+    @include border(2px solid white);
+  }
 }
 
 .card::after {
@@ -18,12 +25,6 @@
   z-index: -1;
 }
 
-img {
-  @include size(80%, auto, auto);
-  margin-top: 5%;
-  display: block;
-  @include border(2px solid white);
-}
 
 .card-header {
   @include fontface($main-font, $white, 1.09em, 300, 4vh, .5px);
@@ -47,6 +48,13 @@ button {
   @include size($height: 435px, $margin: 5% 0 0 0);
   background-color: $blue;
 
+  img {
+    @include size(80%, auto, auto);
+    margin-top: 5%;
+    display: block;
+    @include border(2px solid white);
+  }
+
   button {
     @include fontface($main-font,  $white);
     @include size(40%, 8%, 5% 0 0 5%);
@@ -54,7 +62,6 @@ button {
     background-color: darken( $blue, 15% );
   }
 }
-
 .card-two::after {
   @include size(100%, 450px);
   content: "";
@@ -62,6 +69,75 @@ button {
   background-repeat: no-repeat;
   opacity: 0.5;
   top: 450px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+
+.card-three {
+  @include span-columns(12);
+  @include size($height: 435px, $margin: 5% 0 0 0);
+  background-color: $green;
+
+  img {
+    @include size(80%, 2%, auto);
+    margin-top: 5%;
+    display: block;
+    @include border(2px solid white);
+  }
+
+  button {
+    @include fontface($main-font,  $white);
+    @include size(40%, 8%, 5% 0 0 5%);
+    @include border(2px solid white, 20px);
+    background-color: darken( $green, 20% );
+  }
+}
+.card-three::after {
+  @include size(100%, 455px);
+  content: "";
+  background: url('../img/avatar.jpg');
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  top: 900px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.card-four {
+  @include span-columns(12);
+  @include size($height: 430px, $margin: 5% 0 0 0);
+  background-color: $purple;
+  overflow: hidden;
+  
+
+  img {
+    @include size(80%, 2%, auto);
+    margin-top: 5%;
+    display: block;
+    @include border(2px solid white);
+  }
+
+  button {
+    @include fontface($main-font,  $white);
+    @include size(40%, 8%, 5% 0 0 5%);
+    @include border(2px solid white, 20px);
+    background-color: darken( $purple, 20% );
+  }
+}
+.card-four::after {
+  @include size(100%, 450px);
+  content: "";
+  background: url('../img/doctor-who.jpg');
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  top: 1350px;
   left: 0;
   bottom: 0;
   right: 0;
