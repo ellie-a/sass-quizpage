@@ -21,7 +21,8 @@ html {
     margin-right: 0; }
 
 .card::after {
-  height: 100%;
+  width: 100%;
+  height: 450px;
   content: "";
   background: url("../img/rey.jpg");
   background-repeat: no-repeat;
@@ -46,10 +47,9 @@ img {
   font-family: "Raleway", sans-serif;
   font-size: 1.09em;
   font-size: 300;
-  margin: 5% 5% 0 5%;
   line-height: 4vh;
-  letter-spacing: .5px;
-  color: white; }
+  letter-spacing: 0.5px;
+  margin: 5% 5% 0 5%; }
 
 .card-comment {
   color: white;
@@ -67,5 +67,39 @@ button {
   border: 2px solid white;
   border-radius: 20px;
   background-color: rgba(221, 131, 53, 0.5); }
+
+.card-two {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  height: 435px;
+  margin: 5% 0 0 0;
+  background-color: rgba(73, 100, 131, 0.5); }
+  .card-two:last-child {
+    margin-right: 0; }
+  .card-two button {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    width: 40%;
+    height: 8%;
+    margin: 5% 0 0 5%;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: rgba(46, 63, 82, 0.5); }
+
+.card-two::after {
+  width: 100%;
+  height: 450px;
+  content: "";
+  background: url("../img/harry.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  top: 450px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
 
 /*# sourceMappingURL=styles.css.map */

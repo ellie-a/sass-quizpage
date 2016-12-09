@@ -5,7 +5,7 @@
 }
 
 .card::after {
-  @include size($height: 100%);
+  @include size(100%, 450px);
   content: "";
   background: url('../img/rey.jpg');
   background-repeat: no-repeat;
@@ -22,17 +22,12 @@ img {
   @include size(80%, auto, auto);
   margin-top: 5%;
   display: block;
-  border: 2px solid white;
-
+  @include border(2px solid white);
 }
 
 .card-header {
-  @include fontface($main-font, $white, 1.09em, 300);
+  @include fontface($main-font, $white, 1.09em, 300, 4vh, .5px);
   @include size($margin: 5% 5% 0 5%);
-  line-height: 4vh;
-  letter-spacing: .5px;
-  color: white;
-
 }
 
 .card-comment {
@@ -43,7 +38,33 @@ img {
 button {
   @include fontface($main-font,  $white);
   @include size(40%, 8%, 5% 0 0 5%);
-  border: 2px solid white;
-  border-radius: 20px;
+  @include border(2px solid white, 20px);
   background-color: darken( $orange, 10% );
+}
+
+.card-two {
+  @include span-columns(12);
+  @include size($height: 435px, $margin: 5% 0 0 0);
+  background-color: $blue;
+
+  button {
+    @include fontface($main-font,  $white);
+    @include size(40%, 8%, 5% 0 0 5%);
+    @include border(2px solid white, 20px);
+    background-color: darken( $blue, 15% );
+  }
+}
+
+.card-two::after {
+  @include size(100%, 450px);
+  content: "";
+  background: url('../img/harry.jpg');
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  top: 450px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
