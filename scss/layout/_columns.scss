@@ -1,3 +1,16 @@
+img {
+  @include size(80%, auto, auto);
+  margin-top: 5%;
+  display: block;
+  @include border(2px solid white);
+  @include clearfix;
+  overflow: hidden;
+
+  @media #{$brk-md}{
+    display: none;
+  }
+}
+
 .card {
   @include span-columns(12);
   @include size($height: 435px);
@@ -5,6 +18,8 @@
 
   @media #{$brk-md} {
     background-image: url('../img/rey.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   button {
@@ -17,21 +32,32 @@
       margin-right: 5%;
     }
   }
-}
+  .card-header {
+    @include fontface($main-font, $white, 1.09em, 300, 4vh, .5px);
+    @include size($margin: 5% 5% 5% 5%);
+    @include clearfix;
+    overflow: hidden;
 
-img {
-  @include size(80%, auto, auto);
-  margin-top: 5%;
-  display: block;
-  @include border(2px solid white);
-  @include clearfix;
-  overflow: hidden;
+    @media #{$brk-md} {
+      @include size(40%, 10%, 5% 5% 5% 5%);
+      border-radius: 10px;
+      @include fontface($main-font, $white, 1.25em, 300, 2vh, .5px);
+      background-color: darken($orange, 15%);
+      text-align: center;
+    }
+  }
+  .card-comment {
+    @include fontface($main-font, $white, .85em, 25);
+    @include size($margin: 5% 5% 5% 5%);
+    @include clearfix;
+    overflow: hidden;
 
-  @media #{$brk-md}{
-    display: none;
-    // float: left;
-    // @include size(45%, auto, 5% 0 0 5%);
-    // display: block;
+    @media #{$brk-md} {
+      @include size(50%, auto, 5% 5% 5% 5%);
+      @include fontface($main-font, $white, 1.1em, 25, 2.5vh);
+      background-color: darken($orange, 15%);
+      border-radius: 10px;
+    }
   }
 }
 
@@ -50,34 +76,6 @@ img {
     z-index: -1;
   }
 }
-
-
-.card-header {
-  @include fontface($main-font, $white, 1.09em, 300, 4vh, .5px);
-  @include size($margin: 5% 5% 5% 5%);
-  @include clearfix;
-  overflow: hidden;
-
-  @media #{$brk-md} {
-    @include size(50%, auto, 5% 5% 5% 5%);
-    @include fontface($main-font, $white, 1.25em, 300, 2vh, .5px);
-  }
-
-}
-
-.card-comment {
-  @include fontface($main-font,  $white, .85em, 25);
-  @include size($margin: 5% 5% 5% 5%);
-  @include clearfix;
-  overflow: hidden;
-
-  @media #{$brk-md} {
-    @include size(50%, auto, 5% 5% 5% 5%);
-    @include fontface($main-font,  $white, 1.1em, 25);
-  }
-
-}
-
 
 .card-two {
   @include span-columns(12);
@@ -100,7 +98,39 @@ img {
       margin-right: 5%;
     }
   }
+  .card-header {
+    @include fontface($main-font, $white, 1.09em, 300, 4vh, .5px);
+    @include size($margin: 5% 5% 5% 5%);
+    @include clearfix;
+    overflow: hidden;
+
+    @media #{$brk-md} {
+      @include size(40%, 10%, 5% 5% 5% 5%);
+      border-radius: 10px;
+      @include fontface($main-font, $white, 1.25em, 300, 2vh, .5px);
+      background-color: darken($blue, 20%);
+      text-align: center;
+    }
+  }
+  .card-comment {
+    @include fontface($main-font,  $white, .85em, 25);
+    @include size($margin: 5% 5% 5% 5%);
+    @include clearfix;
+    overflow: hidden;
+
+    @media #{$brk-md} {
+      @include size(50%, auto, 5% 5% 5% 5%);
+      @include fontface($main-font, $white, 1.1em, 25);
+      @media #{$brk-md} {
+        @include size(50%, auto, 5% 5% 5% 5%);
+        @include fontface($main-font, $white, 1.1em, 25, 2.5vh);
+        background-color: darken($blue, 25%);
+        border-radius: 10px;
+      }
+    }
+  }
 }
+
 .card-two::after {
   @media #{$brk-mobile} {
     @include size(100%, 450px);
@@ -116,7 +146,6 @@ img {
     z-index: -1;
   }
 }
-
 
 .card-three {
   @include span-columns(12);
@@ -140,7 +169,35 @@ img {
       margin-right: 5%;
     }
   }
+  .card-header {
+    @include fontface($main-font, $white, 1.09em, 300, 4vh, .5px);
+    @include size($margin: 5% 5% 5% 5%);
+    @include clearfix;
+    overflow: hidden;
+
+    @media #{$brk-md} {
+      @include size(40%, 10%, 5% 5% 5% 5%);
+      border-radius: 10px;
+      @include fontface($main-font, $white, 1.25em, 300, 2vh, .5px);
+      background-color: darken($green, 20%);
+      text-align: center;
+    }
+  }
+  .card-comment {
+    @include fontface($main-font, $white, .85em, 25);
+    @include size($margin: 5% 5% 5% 5%);
+    @include clearfix;
+    overflow: hidden;
+
+    @media #{$brk-md} {
+      @include size(50%, auto, 5% 5% 5% 5%);
+      @include fontface($main-font, $white, 1.1em, 25, 2.5vh);
+      background-color: darken($green, 15%);
+      border-radius: 10px;
+    }
+  }
 }
+
 .card-three::after {
   @media #{$brk-mobile} {
     @include size(100%, 455px);
@@ -178,7 +235,35 @@ img {
       margin-right: 5%;
     }
   }
+  .card-header {
+    @include fontface($main-font, $white, 1.09em, 300, 4vh, .5px);
+    @include size($margin: 5% 5% 5% 5%);
+    @include clearfix;
+    overflow: hidden;
+
+    @media #{$brk-md} {
+      @include size(40%, 10%, 5% 5% 5% 5%);
+      border-radius: 10px;
+      @include fontface($main-font, $white, 1.25em, 300, 2vh, .5px);
+      background-color: darken($purple, 45%);
+      text-align: center;
+    }
+  }
+  .card-comment {
+    @include fontface($main-font,  $white, .85em, 25);
+    @include size($margin: 5% 5% 5% 5%);
+    @include clearfix;
+    overflow: hidden;
+
+    @media #{$brk-md} {
+      @include size(50%, auto, 5% 5% 5% 5%);
+      @include fontface($main-font,  $white, 1.1em, 25, 2.5vh);
+      background-color: darken($purple, 60%);
+      border-radius: 10px;
+    }
+  }
 }
+
 .card-four::after {
   @media #{$brk-mobile} {
     @include size(100%, 450px);
