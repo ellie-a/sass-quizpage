@@ -8,3 +8,7 @@ $white : white;
 $blue : rgba(73, 100, 131, 0.5);
 $green : rgba(81, 84, 60, 0.5);
 $purple : rgba(88, 86, 122, .5);
+
+//media queries
+$brk-mobile : '(max-width: 420px)';
+$brk-md : '(min-width: 421px)';
