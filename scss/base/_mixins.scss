@@ -5,9 +5,10 @@
   padding: $padding;
 }
 
-@mixin fontface($main-font, $font-size: null, $font-weight: null) {
+@mixin fontface($main-font, $font-color, $font-size: null, $font-weight: null) {
+  color: $font-color;
   font-family: $main-font;
   font-size: $font-size;
-  font-size: $font-weight; 
+  font-size: $font-weight;
 
 }
