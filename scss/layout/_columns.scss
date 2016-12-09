@@ -3,6 +3,10 @@
   @include size($height: 435px);
   background-color: $orange;
 
+  @media #{$brk-md} {
+    background-image: url('../img/rey.jpg');
+  }
+
   button {
     @include fontface($main-font,  $white);
     @include size(40%, 8%, 5% 0 0 5%);
@@ -24,9 +28,10 @@ img {
   overflow: hidden;
 
   @media #{$brk-md}{
-    float: left;
-    @include size(45%, auto, 5% 0 0 5%);
-    display: block;
+    display: none;
+    // float: left;
+    // @include size(45%, auto, 5% 0 0 5%);
+    // display: block;
   }
 }
 
@@ -53,6 +58,10 @@ img {
   @include clearfix;
   overflow: hidden;
 
+  @media #{$brk-md} {
+    @include size(50%, auto, 5% 5% 5% 5%);
+    @include fontface($main-font, $white, 1.25em, 300, 2vh, .5px);
+  }
 
 }
 
@@ -62,6 +71,11 @@ img {
   @include clearfix;
   overflow: hidden;
 
+  @media #{$brk-md} {
+    @include size(50%, auto, 5% 5% 5% 5%);
+    @include fontface($main-font,  $white, 1.1em, 25);
+  }
+
 }
 
 
@@ -70,11 +84,21 @@ img {
   @include size($height: 435px, $margin: 5% 0 0 0);
   background-color: $blue;
 
+  @media #{$brk-md} {
+    background-image: url('../img/harry.jpg');
+    background-size: cover;
+  }
+
   button {
     @include fontface($main-font,  $white);
     @include size(40%, 8%, 0 0 0 5%);
     @include border(2px solid white, 20px);
     background-color: darken( $blue, 15% );
+
+    @media #{$brk-md} {
+      float: right;
+      margin-right: 5%;
+    }
   }
 }
 .card-two::after {
@@ -99,12 +123,22 @@ img {
   @include size($height: 435px, $margin: 5% 0 0 0);
   background-color: $green;
 
+  @media #{$brk-md} {
+    background-image: url('../img/avatar.jpg');
+    background-size: cover;
+  }
+
 
   button {
     @include fontface($main-font,  $white);
     @include size(40%, 8%, 5% 0 0 5%);
     @include border(2px solid white, 20px);
     background-color: darken( $green, 20% );
+
+    @media #{$brk-md} {
+      float: right;
+      margin-right: 5%;
+    }
   }
 }
 .card-three::after {
@@ -128,12 +162,21 @@ img {
   @include size($height: 430px, $margin: 5% 0 0 0);
   background-color: $purple;
   overflow: hidden;
+  @media #{$brk-md} {
+    background-image: url('../img/doctor-who.jpg');
+    background-size: cover;
+  }
 
   button {
     @include fontface($main-font,  $white);
     @include size(40%, 8%, 5% 0 0 5%);
     @include border(2px solid white, 20px);
     background-color: darken( $purple, 20% );
+
+    @media #{$brk-md} {
+      float: right;
+      margin-right: 5%;
+    }
   }
 }
 .card-four::after {

@@ -19,6 +19,9 @@ html {
   background-color: rgba(228, 158, 97, 0.5); }
   .card:last-child {
     margin-right: 0; }
+  @media (min-width: 421px) {
+    .card {
+      background-image: url("../img/rey.jpg"); } }
   .card button {
     color: white;
     font-family: "Raleway", sans-serif;
@@ -47,11 +50,7 @@ img {
     clear: both; }
   @media (min-width: 421px) {
     img {
-      float: left;
-      width: 45%;
-      height: auto;
-      margin: 5% 0 0 5%;
-      display: block; } }
+      display: none; } }
 
 @media (max-width: 420px) {
   .card::after {
@@ -81,6 +80,17 @@ img {
     content: "";
     display: table;
     clear: both; }
+  @media (min-width: 421px) {
+    .card-header {
+      width: 50%;
+      height: auto;
+      margin: 5% 5% 5% 5%;
+      color: white;
+      font-family: "Raleway", sans-serif;
+      font-size: 1.25em;
+      font-size: 300;
+      line-height: 2vh;
+      letter-spacing: 0.5px; } }
 
 .card-comment {
   color: white;
@@ -93,6 +103,15 @@ img {
     content: "";
     display: table;
     clear: both; }
+  @media (min-width: 421px) {
+    .card-comment {
+      width: 50%;
+      height: auto;
+      margin: 5% 5% 5% 5%;
+      color: white;
+      font-family: "Raleway", sans-serif;
+      font-size: 1.1em;
+      font-size: 25; } }
 
 .card-two {
   float: left;
@@ -104,6 +123,10 @@ img {
   background-color: rgba(73, 100, 131, 0.5); }
   .card-two:last-child {
     margin-right: 0; }
+  @media (min-width: 421px) {
+    .card-two {
+      background-image: url("../img/harry.jpg");
+      background-size: cover; } }
   .card-two button {
     color: white;
     font-family: "Raleway", sans-serif;
@@ -113,6 +136,10 @@ img {
     border: 2px solid white;
     border-radius: 20px;
     background-color: rgba(46, 63, 82, 0.5); }
+    @media (min-width: 421px) {
+      .card-two button {
+        float: right;
+        margin-right: 5%; } }
 
 @media (max-width: 420px) {
   .card-two::after {
@@ -139,6 +166,10 @@ img {
   background-color: rgba(81, 84, 60, 0.5); }
   .card-three:last-child {
     margin-right: 0; }
+  @media (min-width: 421px) {
+    .card-three {
+      background-image: url("../img/avatar.jpg");
+      background-size: cover; } }
   .card-three button {
     color: white;
     font-family: "Raleway", sans-serif;
@@ -148,6 +179,10 @@ img {
     border: 2px solid white;
     border-radius: 20px;
     background-color: rgba(24, 25, 18, 0.5); }
+    @media (min-width: 421px) {
+      .card-three button {
+        float: right;
+        margin-right: 5%; } }
 
 @media (max-width: 420px) {
   .card-three::after {
@@ -175,6 +210,10 @@ img {
   overflow: hidden; }
   .card-four:last-child {
     margin-right: 0; }
+  @media (min-width: 421px) {
+    .card-four {
+      background-image: url("../img/doctor-who.jpg");
+      background-size: cover; } }
   .card-four button {
     color: white;
     font-family: "Raleway", sans-serif;
@@ -184,6 +223,10 @@ img {
     border: 2px solid white;
     border-radius: 20px;
     background-color: rgba(45, 44, 62, 0.5); }
+    @media (min-width: 421px) {
+      .card-four button {
+        float: right;
+        margin-right: 5%; } }
 
 @media (max-width: 420px) {
   .card-four::after {
