@@ -7,7 +7,7 @@ img {
   overflow: hidden;
 
   @media #{$brk-md}{
-    display: none;
+    @include display(none);
   }
 }
 
