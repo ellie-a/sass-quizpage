@@ -27,6 +27,7 @@ img {
     @include size(40%, 8%, 5% 0 0 5%);
     @include border(2px solid white, 20px);
     background-color: darken( $orange, 10% );
+
     @media #{$brk-md} {
       float: right;
       margin-right: 5%;
@@ -35,8 +36,6 @@ img {
   .card-header {
     @include fontface($main-font, $white, 1.09em, 300, 4vh, .5px);
     @include size($margin: 5% 5% 5% 5%);
-    @include clearfix;
-    overflow: hidden;
 
     @media #{$brk-md} {
       @include size(40%, 10%, 5% 5% 5% 5%);
@@ -49,8 +48,6 @@ img {
   .card-comment {
     @include fontface($main-font, $white, .85em, 25);
     @include size($margin: 5% 5% 5% 5%);
-    @include clearfix;
-    overflow: hidden;
 
     @media #{$brk-md} {
       @include size(50%, auto, 5% 5% 5% 5%);
@@ -101,8 +98,6 @@ img {
   .card-header {
     @include fontface($main-font, $white, 1.09em, 300, 4vh, .5px);
     @include size($margin: 5% 5% 5% 5%);
-    @include clearfix;
-    overflow: hidden;
 
     @media #{$brk-md} {
       @include size(40%, 10%, 5% 5% 5% 5%);
@@ -115,12 +110,11 @@ img {
   .card-comment {
     @include fontface($main-font,  $white, .85em, 25);
     @include size($margin: 5% 5% 5% 5%);
-    @include clearfix;
-    overflow: hidden;
 
     @media #{$brk-md} {
       @include size(50%, auto, 5% 5% 5% 5%);
       @include fontface($main-font, $white, 1.1em, 25);
+
       @media #{$brk-md} {
         @include size(50%, auto, 5% 5% 5% 5%);
         @include fontface($main-font, $white, 1.1em, 25, 2.5vh);
@@ -186,8 +180,6 @@ img {
   .card-comment {
     @include fontface($main-font, $white, .85em, 25);
     @include size($margin: 5% 5% 5% 5%);
-    @include clearfix;
-    overflow: hidden;
 
     @media #{$brk-md} {
       @include size(50%, auto, 5% 5% 5% 5%);
@@ -238,8 +230,6 @@ img {
   .card-header {
     @include fontface($main-font, $white, 1.09em, 300, 4vh, .5px);
     @include size($margin: 5% 5% 5% 5%);
-    @include clearfix;
-    overflow: hidden;
 
     @media #{$brk-md} {
       @include size(40%, 10%, 5% 5% 5% 5%);
@@ -252,8 +242,6 @@ img {
   .card-comment {
     @include fontface($main-font,  $white, .85em, 25);
     @include size($margin: 5% 5% 5% 5%);
-    @include clearfix;
-    overflow: hidden;
 
     @media #{$brk-md} {
       @include size(50%, auto, 5% 5% 5% 5%);
