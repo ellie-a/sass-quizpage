@@ -60,9 +60,8 @@ img {
 
 .card::after {
   @media #{$brk-mobile} {
-    @include size(100%, 450px);
-    content: "";
     background: url('../img/rey.jpg');
+    content: "";
     background-repeat: no-repeat;
     opacity: 0.5;
     top: 0;
@@ -71,6 +70,9 @@ img {
     right: 0;
     position: absolute;
     z-index: -1;
+    %test {
+      @include size(100%, 450px);
+    }
   }
 }
 
@@ -127,7 +129,6 @@ img {
 
 .card-two::after {
   @media #{$brk-mobile} {
-    @include size(100%, 450px);
     content: "";
     background: url('../img/harry.jpg');
     background-repeat: no-repeat;
@@ -138,6 +139,7 @@ img {
     right: 0;
     position: absolute;
     z-index: -1;
+    @extend %test;
   }
 }
 
@@ -192,9 +194,9 @@ img {
 
 .card-three::after {
   @media #{$brk-mobile} {
-    @include size(100%, 455px);
-    content: "";
+    @extend %test;
     background: url('../img/avatar.jpg');
+    content: "";
     background-repeat: no-repeat;
     opacity: 0.5;
     top: 900px;
@@ -254,7 +256,7 @@ img {
 
 .card-four::after {
   @media #{$brk-mobile} {
-    @include size(100%, 450px);
+    @extend %test;
     content: "";
     background: url('../img/doctor-who.jpg');
     background-repeat: no-repeat;
